@@ -1,0 +1,176 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    background-color: #800080;
+    color: #FF00FF;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px dashed #00FFFF;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 48px;
+    color: #FF0000;
+    text-shadow: 2px 2px #FFFF00;
+    margin-bottom: 20px;
+}
+
+.age {
+    font-size: 72px;
+    font-weight: bold;
+    color: #00FF00;
+    text-shadow: 3px 3px #0000FF;
+    margin: 20px 0;
+}
+
+.emma-image {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #FF00FF;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.cake {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.visitor-count {
+    font-size: 18px;
+    color: #0000FF;
+    margin-top: 20px;
+}
+
+.gif-section {
+    margin-top: 40px;
+    background-color: #FFFF00;
+    padding: 20px;
+    border: 3px solid #FF6600;
+}
+
+.gif-section h2 {
+    color: #FF6600;
+    text-shadow: 1px 1px #0000FF;
+}
+
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gif-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #FF00FF;
+}
+
+.photo-story {
+    margin-top: 40px;
+    background-color: #FF99CC;
+    padding: 20px;
+    border: 3px solid #FF00FF;
+}
+
+.photo-story h2 {
+    color: #FF00FF;
+    text-shadow: 1px 1px #FFFF00;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    border: 5px solid #00FFFF;
+}
+
+.prev-button, .next-button {
+    background-color: #FF00FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.guestbook {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.guestbook h2 {
+    color: #FF6600;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+}
+
+.guestbook-form button {
+    background-color: #00FF00;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.guestbook-entries {
+    margin-top: 20px;
+}
+
+.guestbook-entry {
+    background-color: #FFFF00;
+    color: #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #FF00FF;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .age {
+        font-size: 54px;
+    }
+
+    .emma-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .gif-image {
+        width: 100px;
+        height: 100px;
+    }
+}

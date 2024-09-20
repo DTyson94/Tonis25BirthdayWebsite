@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma's 25th Birthday Celebration!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="blinking-text">Alles Gude zum 25. Gebu liebe Toni!</h1>
+        <img src="{{ url_for('static', filename='images/toni.png') }}" alt="Emma" class="emma-image">
+        <div class="age">25</div>
+        <p>Willkommnen !</p>
+        <img src="{{ url_for('static', filename='images/birthday_cake.gif') }}" alt="Birthday Cake" class="cake">
+        <p>Join us for a gnarly celebration on July 15, 1999*</p>
+        <p><small>*It's actually 2023, but let's pretend it's 1999!</small></p>
+        <div class="visitor-count">
+            <marquee>You are visitor number: {{ visitor_count }}</marquee>
+        </div>
+        <div class="gif-section">
+            <h2>Totally Rad 90s GIFs!</h2>
+            <div class="gif-container">
+                <img src="{{ url_for('static', filename='images/gif1.gif') }}" alt="90s GIF 1" class="gif-image">
+                <img src="{{ url_for('static', filename='images/gif2.gif') }}" alt="90s GIF 2" class="gif-image">
+                <img src="{{ url_for('static', filename='images/gif3.gif') }}" alt="90s GIF 3" class="gif-image">
+                <img src="{{ url_for('static', filename='images/gif4.gif') }}" alt="90s GIF 4" class="gif-image">
+                <img src="{{ url_for('static', filename='images/gif5.gif') }}" alt="90s GIF 5" class="gif-image">
+                <img src="{{ url_for('static', filename='images/gif6.gif') }}" alt="90s GIF 6" class="gif-image">
+                <img src="{{ url_for('static', filename='images/gif7.gif') }}" alt="90s GIF 7" class="gif-image">
+                <img src="{{ url_for('static', filename='images/gif8.gif') }}" alt="90s GIF 8" class="gif-image">
+            </div>
+        </div>
+        <div class="photo-story">
+            <h2>Emma's Awesome 90s Photo Story</h2>
+            <div class="slideshow-container">
+                <img src="{{ url_for('static', filename='images/photo1.jpg') }}" alt="Photo 1" class="slide">
+                <img src="{{ url_for('static', filename='images/photo2.jpg') }}" alt="Photo 2" class="slide">
+                <img src="{{ url_for('static', filename='images/photo3.jpg') }}" alt="Photo 3" class="slide">
+            </div>
+            <button class="prev-button">Previous</button>
+            <button class="next-button">Next</button>
+        </div>
+        <div class="guestbook">
+            <h2>Guestbook</h2>
+            <form id="guestbook-form" class="guestbook-form">
+                <input type="text" id="guestbook-name" placeholder="Your Name" required>
+                <textarea id="guestbook-message" placeholder="Your Message" required></textarea>
+                <button type="submit">Sign Guestbook</button>
+            </form>
+            <div id="guestbook-entries" class="guestbook-entries"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
+</body>
+</html>
