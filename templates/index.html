@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="blinking-text">Alles Gude zum 25. Gebu liebe Toni!</h1>
+        <h1 class="blinking-text">Alles Gute zum Geburtstag liebe Toni!</h1>
         <img src="{{ url_for('static', filename='images/toni.png') }}" alt="Toni" class="toni-image">
         <div class="age">25</div>
-        <p>Willkommnen !</p>
-        <img src="{{ url_for('static', filename='images/birthday_cake.gif') }}" alt="Birthday Cake" class="cake">
-        <p>1999*</p>
+        <p>Willkommnen zu Tonis super agefahrender Geburtstagshomepage!</p>
+        <video src="{{ url_for('static', filename='gif_videos/blue-eat.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
+
         <p><small>!</small></p>
         <div class="visitor-count">
             <marquee>Du bist Besucher:in NR: {{ visitor_count }}</marquee>
@@ -30,9 +30,9 @@
                 <video src="{{ url_for('static', filename='gif_videos/7.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
                 <video src="{{ url_for('static', filename='gif_videos/8.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
                 <video src="{{ url_for('static', filename='gif_videos/9.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
-                <video src="{{ url_for('static', filename='gif_videos/slay-queen.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
-                <video src="{{ url_for('static', filename='gif_videos/puppy-lol.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
-                <video src="{{ url_for('static', filename='gif_videos/nervous-dog-shy-wuba.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
+                <video src="{{ url_for('static', filename='gif_videos/10.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
+                <video src="{{ url_for('static', filename='gif_videos/11.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
+                <video src="{{ url_for('static', filename='gif_videos/12.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
             </div>
         </div>
         <div class="photo-story">
@@ -66,11 +66,11 @@
             <video src="{{ url_for('static', filename='images/fractal2.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
         </div>
         <div class="guestbook">
-            <h2>Gäste</h2>
+            <h2>Pinnwand</h2>
             <form id="guestbook-form" class="guestbook-form">
                 <input type="text" id="guestbook-name" placeholder="Your Name" required>
                 <textarea id="guestbook-message" placeholder="Your Message" required></textarea>
-                <button type="submit">Sign Guestbook</button>
+                <button type="submit">Auf Pinnwand posten</button>
             </form>
             <div id="guestbook-entries" class="guestbook-entries"></div>
         </div>

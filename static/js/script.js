@@ -28,6 +28,7 @@ function fetchGuestbookEntries() {
                 entryElement.innerHTML = `
                     <strong>${entry.name}</strong> (${entry.timestamp})<br>
                     ${entry.message}
+                    <button onclick="deleteGuestbookEntry('${entry.id}')">Delete</button>
                 `;
                 guestbookEntries.appendChild(entryElement);
             });
@@ -57,4 +58,23 @@ function submitGuestbookEntry() {
         }
     })
     .catch(error => console.error('Error submitting guestbook entry:', error));
+}
+
+function deleteGuestbookEntry(entryId) {
+    fetch('/delete_guestbook_entry', {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({id: entryId})
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            fetchGuestbookEntries();
+        } else {
+            alert('Error deleting guestbook entry. Please try again.');
+        }
+    })
+    .catch(error => console.error('Error deleting guestbook entry:', error));
 }

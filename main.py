@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import json
 from datetime import datetime
+import uuid
 
 app = Flask(__name__)
 
@@ -29,6 +30,7 @@ def guestbook():
     
     if name and message:
         entry = {
+            'id': str(uuid.uuid4()),  # Add this line to generate a unique ID
             'name': name,
             'message': message,
             'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -58,6 +60,25 @@ def get_guestbook():
         guestbook = []
     
     return jsonify(guestbook)
+
+@app.route('/delete_guestbook_entry', methods=['DELETE'])
+def delete_guestbook_entry():
+    entry_id = request.json.get('id')
+    if entry_id is not None:
+        try:
+            with open('guestbook.json', 'r') as f:
+                guestbook = json.load(f)
+            
+            guestbook = [entry for entry in guestbook if entry.get('id') != entry_id]
+            
+            with open('guestbook.json', 'w') as f:
+                json.dump(guestbook, f)
+            
+            return jsonify({'status': 'success', 'message': 'Entry deleted'})
+        except Exception as e:
+            return jsonify({'status': 'error', 'message': str(e)}), 500
+    else:
+        return jsonify({'status': 'error', 'message': 'Entry ID is required'}), 400
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
