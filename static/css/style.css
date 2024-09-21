@@ -31,7 +31,7 @@ h1 {
     margin: 20px 0;
 }
 
-.emma-image {
+.toni-image {
     width: 200px;
     height: 200px;
     border: 5px solid #FF00FF;
@@ -70,7 +70,7 @@ h1 {
     gap: 10px;
 }
 
-.gif-image {
+.gif-video {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -111,6 +111,135 @@ h1 {
     cursor: pointer;
     font-weight: bold;
     font-family: "Comic Sans MS", cursive;
+}
+
+.favorite-things {
+    margin-top: 40px;
+    background-color: #00FFFF;
+    padding: 20px;
+    border: 3px solid #FF00FF;
+}
+
+.favorite-things h2 {
+    color: #FF00FF;
+    text-shadow: 1px 1px #FFFF00;
+}
+
+.favorites-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.favorite-movies, .favorite-foods {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border: 2px dashed #FF00FF;
+    margin: 10px;
+    flex-basis: 45%;
+}
+
+.favorite-movies h3, .favorite-foods h3 {
+    color: #FF6600;
+}
+
+.favorite-movies ul, .favorite-foods ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite-movies li, .favorite-foods li {
+    color: #0000FF;
+    margin-bottom: 5px;
+}
+
+.music-player {
+    margin-top: 40px;
+    background-color: #FF1493;
+    padding: 20px;
+    border: 3px solid #00FF00;
+}
+
+.music-player h2 {
+    color: #FFFF00;
+    text-shadow: 2px 2px #0000FF;
+}
+
+.player-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border: 2px dashed #00FF00;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.control-button {
+    background-color: #00FF00;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.track-info {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.playlist {
+    text-align: left;
+}
+
+.playlist h3 {
+    color: #FF6600;
+}
+
+.playlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.playlist li {
+    color: #0000FF;
+    margin-bottom: 5px;
+}
+
+.horoscope-section {
+    margin-top: 40px;
+    background-color: #FFD700;
+    padding: 20px;
+    border: 3px solid #8A2BE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horoscope-section h2 {
+    color: #8A2BE2;
+    text-shadow: 1px 1px #FFFF00;
+}
+
+.horoscope-content {
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px dashed #8A2BE2;
+    margin: 10px 0;
+}
+
+.horoscope-gif {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #8A2BE2;
+    margin: 10px 0;
 }
 
 .guestbook {
@@ -164,13 +293,17 @@ h1 {
         font-size: 54px;
     }
 
-    .emma-image {
+    .toni-image {
         width: 150px;
         height: 150px;
     }
 
-    .gif-image {
+    .gif-video {
         width: 100px;
         height: 100px;
+    }
+
+    .favorite-movies, .favorite-foods {
+        flex-basis: 100%;
     }
 }

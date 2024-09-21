@@ -3,46 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma's 25th Birthday Celebration!</title>
+    <title>Toni's 25th Birthday Celebration!</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
         <h1 class="blinking-text">Alles Gude zum 25. Gebu liebe Toni!</h1>
-        <img src="{{ url_for('static', filename='images/toni.png') }}" alt="Emma" class="emma-image">
+        <img src="{{ url_for('static', filename='images/toni.png') }}" alt="Toni" class="toni-image">
         <div class="age">25</div>
         <p>Willkommnen !</p>
         <img src="{{ url_for('static', filename='images/birthday_cake.gif') }}" alt="Birthday Cake" class="cake">
-        <p>Join us for a gnarly celebration on July 15, 1999*</p>
-        <p><small>*It's actually 2023, but let's pretend it's 1999!</small></p>
+        <p>1999*</p>
+        <p><small>!</small></p>
         <div class="visitor-count">
-            <marquee>You are visitor number: {{ visitor_count }}</marquee>
+            <marquee>Du bist Besucher:in NR: {{ visitor_count }}</marquee>
         </div>
         <div class="gif-section">
-            <h2>Totally Rad 90s GIFs!</h2>
+            <h2>Hier deine ganz persönliche Sammlung von abgefahrenen Geburtstagsvideos!</h2>
             <div class="gif-container">
-                <img src="{{ url_for('static', filename='images/gif1.gif') }}" alt="90s GIF 1" class="gif-image">
-                <img src="{{ url_for('static', filename='images/gif2.gif') }}" alt="90s GIF 2" class="gif-image">
-                <img src="{{ url_for('static', filename='images/gif3.gif') }}" alt="90s GIF 3" class="gif-image">
-                <img src="{{ url_for('static', filename='images/gif4.gif') }}" alt="90s GIF 4" class="gif-image">
-                <img src="{{ url_for('static', filename='images/gif5.gif') }}" alt="90s GIF 5" class="gif-image">
-                <img src="{{ url_for('static', filename='images/gif6.gif') }}" alt="90s GIF 6" class="gif-image">
-                <img src="{{ url_for('static', filename='images/gif7.gif') }}" alt="90s GIF 7" class="gif-image">
-                <img src="{{ url_for('static', filename='images/gif8.gif') }}" alt="90s GIF 8" class="gif-image">
+                <video src="{{ url_for('static', filename='images/gif1.mp4') }}" class="gif-video" autoplay loop muted></video>
+                <video src="{{ url_for('static', filename='images/gif2.mp4') }}" class="gif-video" autoplay loop muted></video>
+                <video src="{{ url_for('static', filename='images/gif3.mp4') }}" class="gif-video" autoplay loop muted></video>
+                <video src="{{ url_for('static', filename='images/gif4.mp4') }}" class="gif-video" autoplay loop muted></video>
+                <video src="{{ url_for('static', filename='images/gif5.mp4') }}" class="gif-video" autoplay loop muted></video>
+                <video src="{{ url_for('static', filename='images/gif6.mp4') }}" class="gif-video" autoplay loop muted></video>
+                <video src="{{ url_for('static', filename='images/gif7.mp4') }}" class="gif-video" autoplay loop muted></video>
+                <video src="{{ url_for('static', filename='images/gif8.mp4') }}" class="gif-video" autoplay loop muted></video>
             </div>
         </div>
         <div class="photo-story">
-            <h2>Emma's Awesome 90s Photo Story</h2>
+            <h2>Bitte beachten sie die total abgefahrene anonymisierte Foto Story - Keinerlei Säugetiere sind bei den Aufnahmen zu Schaden gekommen!</h2>
             <div class="slideshow-container">
                 <img src="{{ url_for('static', filename='images/photo1.jpg') }}" alt="Photo 1" class="slide">
                 <img src="{{ url_for('static', filename='images/photo2.jpg') }}" alt="Photo 2" class="slide">
                 <img src="{{ url_for('static', filename='images/photo3.jpg') }}" alt="Photo 3" class="slide">
+                <img src="{{ url_for('static', filename='images/photo4.jpg') }}" alt="Photo 4" class="slide">
+                <img src="{{ url_for('static', filename='images/photo5.jpg') }}" alt="Photo 5" class="slide">
+                <img src="{{ url_for('static', filename='images/photo6.jpg') }}" alt="Photo 6" class="slide">
             </div>
             <button class="prev-button">Previous</button>
             <button class="next-button">Next</button>
         </div>
+       
+        <div class="horoscope-section">
+            <img src="{{ url_for('static', filename='images/fractal1.mp4') }}" alt="Horoscope GIF 1" class="horoscope-gif">
+            <div class="horoscope-content">
+                <h2>Dein Horoskop</h2>
+                <p>Jungfrau (24.08. - 23.09.)</p>
+                <p>Im Ausklang dieses Monats stürzen Sie geradezu mit Schwung und Elan in die kommenden Tage. Sie können es gar nicht erwarten, die Ärmel hochzukrempeln und loszulegen. Sie haben noch viel zu tun, schaffen aber alles in der Kürze der Zeit.</p>
+                <p>Die Launen des IMPP sind schon seltsam. Nicht irritieren lassen. Trotz der Herausforderungen durch unangenehme Prüfungskomitees glänzen Sie mit guten Einfällen und zielsicherem Raten. Sie sind nicht zu bremsen.</p>
+                <p>Ab Anfang bis Mitte Oktober dann begrüßt Sie die Welt an knackig frischen Herbstmorgenden lächelnd. Sie blühen auf.</p>
+                <p>Nach einer kurzen Phase, die sowohl wilde Feierei als auch Erholung beinhaltet, beginnt ein neuer Abschnitt in einer unbekannten Umgebung. Sie sind voller Power, fühlen sich von innen heraus stark und glänzen! Das bringt Ihnen Respekt und Anerkennung ein. Nutzen Sie die Kraft, das Steuer zu richten und etwas für Ihre Selbstverwirklichung zu tun. Sie strahlen einen prickelnden Charme aus und werden auch im Freizeit-Bereich auf interessante Menschen treffen und neue Freundschaften knüpfen.</p>
+                <p>Zwischenzeitlich könnte der Bedarf nach einem kurzen Urlaub aufkommen - Gehen Sie dem nach. Gemeinsam werden Sie Tage mit erfüllenden Erlebnissen genießen und Abende entspannt ausklingen lassen. Dank Ihrer inspirierenden Art sind Reisen mit Ihnen für Ihre Begleitung ein Genuss.</p>
+                <p>Für heute Abend ist es empfehlenswert auszugehen und sich zu amüsieren. Im Kreise lieber Menschen lässt es sich unbekümmert plaudern und lachen.</p>
+                <p>Gönnen Sie sich eine Pizza!</p>
+                <p>Abgesehen davon bleibt zu sagen: Wenn Sie sich an Ihre Träume erinnern, dann bitte aufschreiben.</p>
+            </div>
+            <img src="{{ url_for('static', filename='images/horoscope_gif2.gif') }}" alt="Horoscope GIF 2" class="horoscope-gif">
+        </div>
         <div class="guestbook">
-            <h2>Guestbook</h2>
+            <h2>Gäste</h2>
             <form id="guestbook-form" class="guestbook-form">
                 <input type="text" id="guestbook-name" placeholder="Your Name" required>
                 <textarea id="guestbook-message" placeholder="Your Message" required></textarea>
@@ -53,5 +73,6 @@
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/music-player.js') }}"></script>
 </body>
 </html>
