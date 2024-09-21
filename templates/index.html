@@ -9,9 +9,7 @@
 <body>
     <div class="container">
         <h1 class="blinking-text">Alles Gute zum Geburtstag liebe Toni!</h1>
-        <img src="{{ url_for('static', filename='images/toni.png') }}" alt="Toni" class="toni-image">
-        <div class="age">25</div>
-        <p>Willkommnen zu Tonis super agefahrender Geburtstagshomepage!</p>
+        
         <video src="{{ url_for('static', filename='gif_videos/blue-eat.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
 
         <p><small>!</small></p>
@@ -19,7 +17,7 @@
             <marquee>Du bist Besucher:in NR: {{ visitor_count }}</marquee>
         </div>
         <div class="gif-section">
-            <h2>Hier deine ganz persönliche Sammlung von abgefahrenen Geburtstagsvideos!</h2>
+            <h2>Alle Brüder dieser Welt grüßen dich!</h2>
             <div class="gif-container">
                 <video src="{{ url_for('static', filename='gif_videos/1.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
                 <video src="{{ url_for('static', filename='gif_videos/2.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
@@ -62,6 +60,10 @@
                 <p>Für heute Abend ist es empfehlenswert auszugehen und sich zu amüsieren. Im Kreise lieber Menschen lässt es sich unbekümmert plaudern und lachen.</p>
                 <p>Gönnen Sie sich eine Pizza!</p>
                 <p>Abgesehen davon bleibt zu sagen: Wenn Sie sich an Ihre Träume erinnern, dann bitte aufschreiben.</p>
+                <h2>Horoskop für alle anderen</h2>
+                <p>Waage - Skorpion - Schütze - Steinbock - Wassermann - Fische - Widder - Stier - Zwillinge - Krebs - Löwe (24.09. - 23.08.)</p>
+                <p>Ärgeren Sie sich nicht, wenn Sie Gläser fallen lassen oder die Wohnungsschlüssel verlegen. Es liegt nicht an Ihnen - Es ist Ihr Sternzeichen. Sie dürften in der kommenden Zeit kleineren und größeren Unannehmlichkeiten begegnen. Je weniger Sie sich davon stressen lassen, desto mehr erreichen Sie. Telefonieren Sie doch einfach mal eine halbe Stunde mit Ihrer guten Freundin, die Jungfrau ist. Das wirkt Wunder.</p>
+                <p>Es liegt in der Tat eine erhebliche Spannung in der Luft. Sie sind latent nervös. Vielleicht wird Ihnen der Alltag zu eng. Was hilft dabei? Entweder: Versuchen Sie, dezent im Hintergrund zu bleiben. Alternative: Raus kommen, den Kopf frei machen. Ab Oktober lohnt es sich, der Hauptstadt einen Besuch abzustatten und ein bisschen Großstadtluft zu schnuppern. Die Metropole hält bereichernde Momente und wohltuende Menschen bereit. Insbesondere diese eine wundervolle Freundin, deren vorübergehende Abwesenheit Sie schmerzlich spüren.</p>
             </div>
             <video src="{{ url_for('static', filename='images/fractal2.mp4') }}" class="gif-video" autoplay loop muted playsinline></video>
         </div>
