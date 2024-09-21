@@ -65,18 +65,17 @@ h1 {
 
 .gif-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     justify-content: center;
 }
 
 .gif-video {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border: 3px solid #FF00FF;
-    max-width: 150px;
-    max-height: 150px;
 }
 
 .photo-story {
@@ -200,11 +199,6 @@ h1 {
     .toni-image {
         width: 150px;
         height: 150px;
-    }
-
-    .gif-video {
-        max-width: 100px;
-        max-height: 100px;
     }
 
     .horoscope-section .gif-video {
